@@ -1,9 +1,14 @@
 # Author: Aegor 1998  |  Created: 11/10/2023
 # Purpose: To automate the generation of excel reports
 
-# Load Raw Data Sets
+# Load Libaries Used
+library(package = 'rstudioapi')
 
-# Set 1: Normal inventory
+# Load Raw Data Sets
+# Set Working Direcotry to Folder in which this script is stored
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+# Set 1: Scanned inventory
 # Set 3: Damaged Computers
 # Set 4: Service-Now Everett Inventory
 
