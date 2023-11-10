@@ -2,6 +2,7 @@
 # Purpose: To automate the generation of excel reports
 
 # Load Raw Data Sets
+
 # Set 1: Normal inventory
 # Set 3: Damaged Computers
 # Set 4: Service-Now Everett Inventory
