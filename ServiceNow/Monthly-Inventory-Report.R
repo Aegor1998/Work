@@ -11,11 +11,11 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 # using readr::read_csv() instead of read.csv() because it is about 7.3x faster 
 # Set 1: Scanned inventory
-scanned <- read_csv("input.csv")
+scanned <- read_csv("scanned.csv")
 # Set 3: Damaged Computers
-damaged <- read_csv("input.csv")
+damaged <- read_csv("damaged.csv")
 # Set 4: Service-Now Everett Inventory
-snow <- read_csv("input.csv")
+snow <- read_csv("snow.csv")
 
 # Creaty Empty Data Sets
 # Table 1: In Stock Inventory. This will have 6 columns: Company, Serial, Type, Make, Model, Warrenty, Asset Function
