@@ -10,11 +10,9 @@ library(package = 'readr')
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 # using readr::read_csv() instead of read.csv() because it is about 7.3x faster 
-# Set 1: Scanned inventory: Make sure loaners have their own column 
+# Set 1: Scanned inventory | Columns: inventory, loaners, damaged 
 scanned <- read_csv("scanned.csv")
-# Set 3: Damaged Computers
-damaged <- read_csv("damaged.csv")
-# Set 4: Service-Now Everett Inventory
+# Set 2: Service-Now Everett Inventory
 snow <- read_csv("snow.csv")
 
 # Creaty Empty Data Sets
