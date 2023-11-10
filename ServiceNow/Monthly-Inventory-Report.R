@@ -10,7 +10,7 @@ library(package = 'readr')
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 # using readr::read_csv() instead of read.csv() because it is about 7.3x faster 
-# Set 1: Scanned inventory
+# Set 1: Scanned inventory: Make sure loaners have their own column 
 scanned <- read_csv("scanned.csv")
 # Set 3: Damaged Computers
 damaged <- read_csv("damaged.csv")
